@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.3.0" timestamp="2024-11-01T12:54:21.256">
+<file name="/Volumes/Steven 1/Cosas de clase/Cuarto/Laboratorio de herramientas/Practica3/src/main/java/es/ull/esit/utilities/BellmanFord.java">
+<violation beginline="51" endline="51" begincolumn="22" endcolumn="33" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="es.ull.esit.utilities" class="BellmanFord" method="BellmanFord" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'BellmanFord': 'INFINITY' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="94" endline="94" begincolumn="33" endcolumn="44" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="es.ull.esit.utilities" class="BellmanFord" method="solve" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'BellmanFord': 'INFINITY' is already in scope because it is declared in an enclosing type
+</violation>
+</file>
+<file name="/Volumes/Steven 1/Cosas de clase/Cuarto/Laboratorio de herramientas/Practica3/src/main/java/es/ull/esit/utilities/ExpositoUtilities.java">
+<violation beginline="72" endline="72" begincolumn="24" endcolumn="42" rule="UnusedPrivateMethod" ruleset="Best Practices" package="es.ull.esit.utilities" class="ExpositoUtilities" method="getFirstAppearance" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+Avoid unused private methods such as 'getFirstAppearance(int[], int)'.
+</violation>
+<violation beginline="275" endline="275" begincolumn="68" endcolumn="74" rule="UnusedFormalParameter" ruleset="Best Practices" package="es.ull.esit.utilities" class="ExpositoUtilities" method="initializeVisits" variable="length" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'length'.
+</violation>
+</file>
+<file name="/Volumes/Steven 1/Cosas de clase/Cuarto/Laboratorio de herramientas/Practica3/src/main/java/es/ull/esit/utilities/PowerSet.java">
+<violation beginline="16" endline="16" begincolumn="26" endcolumn="39" rule="ClassCastExceptionWithToArray" ruleset="Error Prone" package="es.ull.esit.utilities" class="PowerSet" method="PowerSet" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_errorprone.html#classcastexceptionwithtoarray" priority="3">
+This usage of the Collection.toArray() method will throw a ClassCastException.
+</violation>
+</file>
+<file name="/Volumes/Steven 1/Cosas de clase/Cuarto/Laboratorio de herramientas/Practica3/src/main/java/top/TOPTWGRASP.java">
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="25" rule="UnnecessaryImport" ruleset="Code Style" package="top" class="TOPTWGRASP" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Random'
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="29" rule="UnusedPrivateField" ruleset="Best Practices" package="top" class="TOPTWGRASP" variable="solutionTime" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'solutionTime'.
+</violation>
+<violation beginline="80" endline="80" begincolumn="42" endcolumn="57" rule="UselessParentheses" ruleset="Code Style" package="top" class="TOPTWGRASP" method="fuzzySelectionBestFDRCL" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="234" endline="234" begincolumn="17" endcolumn="25" rule="UnusedLocalVariable" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="handleNoCandidates" variable="newDepot" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'newDepot'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="42" endcolumn="50" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="isValidInsertion" variable="customer" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'customer'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="56" endcolumn="59" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="isValidInsertion" variable="pre" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'pre'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="65" endcolumn="68" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="isValidInsertion" variable="suc" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'suc'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="74" endcolumn="84" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="isValidInsertion" variable="routeIndex" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'routeIndex'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="115" endcolumn="129" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="isValidInsertion" variable="departureTimes" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'departureTimes'.
+</violation>
+<violation beginline="349" endline="349" begincolumn="52" endcolumn="60" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="calculateCostAfterInsertion" variable="customer" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'customer'.
+</violation>
+<violation beginline="349" endline="349" begincolumn="66" endcolumn="69" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="calculateCostAfterInsertion" variable="pre" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'pre'.
+</violation>
+<violation beginline="349" endline="349" begincolumn="75" endcolumn="78" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="calculateCostAfterInsertion" variable="suc" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'suc'.
+</violation>
+<violation beginline="349" endline="349" begincolumn="84" endcolumn="94" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="calculateCostAfterInsertion" variable="routeIndex" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'routeIndex'.
+</violation>
+<violation beginline="349" endline="349" begincolumn="125" endcolumn="139" rule="UnusedFormalParameter" ruleset="Best Practices" package="top" class="TOPTWGRASP" method="calculateCostAfterInsertion" variable="departureTimes" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'departureTimes'.
+</violation>
+</file>
+<file name="/Volumes/Steven 1/Cosas de clase/Cuarto/Laboratorio de herramientas/Practica3/src/main/java/top/TOPTWSolution.java">
+<violation beginline="26" endline="26" begincolumn="40" endcolumn="53" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="TOPTWSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="27" endline="27" begincolumn="38" endcolumn="51" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="TOPTWSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="28" endline="28" begincolumn="39" endcolumn="52" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="TOPTWSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="29" endline="29" begincolumn="43" endcolumn="56" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="TOPTWSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="37" endline="37" begincolumn="40" endcolumn="53" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="initSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="38" endline="38" begincolumn="38" endcolumn="51" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="initSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="40" endline="40" begincolumn="34" endcolumn="47" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="top" class="TOPTWSolution" method="initSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'TOPTWSolution': 'NO_INITIALIZED' is already in scope because it is declared in an enclosing type
+</violation>
+<violation beginline="178" endline="178" begincolumn="36" endcolumn="71" rule="UselessParentheses" ruleset="Code Style" package="top" class="TOPTWSolution" method="getInfoSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="211" endline="211" begincolumn="21" endcolumn="35" rule="UselessParentheses" ruleset="Code Style" package="top" class="TOPTWSolution" method="evaluateFitness" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="245" endline="245" begincolumn="25" endcolumn="39" rule="UselessParentheses" ruleset="Code Style" package="top" class="TOPTWSolution" method="printSolution" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.3.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

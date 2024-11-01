@@ -1,0 +1,195 @@
+\doxysection{Referencia de la clase top.\+TOPTWGRASP}
+\label{classtop_1_1_t_o_p_t_w_g_r_a_s_p}\index{top.TOPTWGRASP@{top.TOPTWGRASP}}
+
+
+Clase que implementa el algoritmo GRASP para resolver el problema \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w}.  
+
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ TOPTWGRASP} (\textbf{ TOPTWSolution} sol)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxyref{TOPTWGRASP}{pág.}{classtop_1_1_t_o_p_t_w_g_r_a_s_p}. \end{DoxyCompactList}\item 
+void \textbf{ GRASP} (int max\+Iterations, int max\+Size\+RCL)
+\begin{DoxyCompactList}\small\item\em Método principal de GRASP que ejecuta iteraciones del algoritmo. \end{DoxyCompactList}\item 
+int \textbf{ aleatory\+Selection\+RCL} (int max\+TRCL)
+\begin{DoxyCompactList}\small\item\em Selecciona aleatoriamente un índice de la RCL. \end{DoxyCompactList}\item 
+int \textbf{ fuzzy\+Selection\+Best\+FDRCL} (Array\+List$<$ double[$\,$]$>$ rcl)
+\begin{DoxyCompactList}\small\item\em Realiza una selección difusa de la mejor opción en la RCL. \end{DoxyCompactList}\item 
+int \textbf{ fuzzy\+Selection\+Alpha\+Cut\+RCL} (Array\+List$<$ double[$\,$]$>$ rcl, double alpha)
+\begin{DoxyCompactList}\small\item\em Selecciona un candidato usando corte alfa en la RCL. \end{DoxyCompactList}\item 
+void \textbf{ compute\+Greedy\+Solution} (int max\+Size\+RCL)
+\begin{DoxyCompactList}\small\item\em Método principal de construcción de una solución greedy. \end{DoxyCompactList}\item 
+void \textbf{ update\+Solution} (double[$\,$] candidate\+Selected, Array\+List$<$ Array\+List$<$ Double $>$ $>$ departure\+Times)
+\begin{DoxyCompactList}\small\item\em Actualiza la solución con el candidato seleccionado. \end{DoxyCompactList}\item 
+Array\+List$<$ double[$\,$]$>$ \textbf{ comprehensive\+Evaluation} (Array\+List$<$ Integer $>$ customers, Array\+List$<$ Array\+List$<$ Double $>$ $>$ departure\+Times)
+\item 
+double \textbf{ get\+Max\+Score} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el puntaje máximo del problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static double \textbf{ NO\+\_\+\+EVALUATED} = -\/1.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que implementa el algoritmo GRASP para resolver el problema \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w}. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!TOPTWGRASP@{TOPTWGRASP}}
+\index{TOPTWGRASP@{TOPTWGRASP}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{TOPTWGRASP()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_af0ff5000bf59464aaf630ba7d1753b29} 
+top.\+TOPTWGRASP.\+TOPTWGRASP (\begin{DoxyParamCaption}\item[{\textbf{ TOPTWSolution}}]{sol}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxyref{TOPTWGRASP}{pág.}{classtop_1_1_t_o_p_t_w_g_r_a_s_p}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em sol} & Solución inicial para el problema. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!aleatorySelectionRCL@{aleatorySelectionRCL}}
+\index{aleatorySelectionRCL@{aleatorySelectionRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{aleatorySelectionRCL()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a2c07bc597fa781b81a53ad1017e24a4f} 
+int top.\+TOPTWGRASP.\+aleatory\+Selection\+RCL (\begin{DoxyParamCaption}\item[{int}]{max\+TRCL}{}\end{DoxyParamCaption})}
+
+
+
+Selecciona aleatoriamente un índice de la RCL. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em max\+TRCL} & Tamaño máximo de la lista RCL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Índice seleccionado aleatoriamente de la RCL. 
+\end{DoxyReturn}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!comprehensiveEvaluation@{comprehensiveEvaluation}}
+\index{comprehensiveEvaluation@{comprehensiveEvaluation}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{comprehensiveEvaluation()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ad3b1516f784d040517fd008a5ed40361} 
+Array\+List$<$ double[$\,$]$>$ top.\+TOPTWGRASP.\+comprehensive\+Evaluation (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{customers}{, }\item[{Array\+List$<$ Array\+List$<$ Double $>$ $>$}]{departure\+Times}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!computeGreedySolution@{computeGreedySolution}}
+\index{computeGreedySolution@{computeGreedySolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{computeGreedySolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ade97c51a7d20660d7d306b756b4a6302} 
+void top.\+TOPTWGRASP.\+compute\+Greedy\+Solution (\begin{DoxyParamCaption}\item[{int}]{max\+Size\+RCL}{}\end{DoxyParamCaption})}
+
+
+
+Método principal de construcción de una solución greedy. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em max\+Size\+RCL} & Tamaño máximo de la Lista de Candidatos Restringida. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!fuzzySelectionAlphaCutRCL@{fuzzySelectionAlphaCutRCL}}
+\index{fuzzySelectionAlphaCutRCL@{fuzzySelectionAlphaCutRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{fuzzySelectionAlphaCutRCL()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a0bcf603d05fd13ac0935e3597cc37c6b} 
+int top.\+TOPTWGRASP.\+fuzzy\+Selection\+Alpha\+Cut\+RCL (\begin{DoxyParamCaption}\item[{Array\+List$<$ double[$\,$]$>$}]{rcl}{, }\item[{double}]{alpha}{}\end{DoxyParamCaption})}
+
+
+
+Selecciona un candidato usando corte alfa en la RCL. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rcl} & Lista de Candidatos Restringida (RCL). \\
+\hline
+{\em alpha} & Valor de corte alfa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Posición del candidato seleccionado en la RCL. 
+\end{DoxyReturn}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!fuzzySelectionBestFDRCL@{fuzzySelectionBestFDRCL}}
+\index{fuzzySelectionBestFDRCL@{fuzzySelectionBestFDRCL}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{fuzzySelectionBestFDRCL()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a248016e6d9118cdf5e7284972d31ecea} 
+int top.\+TOPTWGRASP.\+fuzzy\+Selection\+Best\+FDRCL (\begin{DoxyParamCaption}\item[{Array\+List$<$ double[$\,$]$>$}]{rcl}{}\end{DoxyParamCaption})}
+
+
+
+Realiza una selección difusa de la mejor opción en la RCL. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rcl} & Lista de Candidatos Restringida (RCL). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Posición del candidato seleccionado en la RCL. 
+\end{DoxyReturn}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!getMaxScore@{getMaxScore}}
+\index{getMaxScore@{getMaxScore}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{getMaxScore()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_ae0fad47956718e9e96ee5fb6022d9f5b} 
+double top.\+TOPTWGRASP.\+get\+Max\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el puntaje máximo del problema. 
+
+\begin{DoxyReturn}{Devuelve}
+Puntaje máximo. 
+\end{DoxyReturn}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!GRASP@{GRASP}}
+\index{GRASP@{GRASP}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{GRASP()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a11242fc809f6a16ff81136c4785fdc3e} 
+void top.\+TOPTWGRASP.\+GRASP (\begin{DoxyParamCaption}\item[{int}]{max\+Iterations}{, }\item[{int}]{max\+Size\+RCL}{}\end{DoxyParamCaption})}
+
+
+
+Método principal de GRASP que ejecuta iteraciones del algoritmo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em max\+Iterations} & Número máximo de iteraciones del algoritmo. \\
+\hline
+{\em max\+Size\+RCL} & Tamaño máximo de la Lista de Candidatos Restringida (RCL). \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!updateSolution@{updateSolution}}
+\index{updateSolution@{updateSolution}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{updateSolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_adaccdd26e4ad89ffb3e86c780dcd90d7} 
+void top.\+TOPTWGRASP.\+update\+Solution (\begin{DoxyParamCaption}\item[{double[$\,$]}]{candidate\+Selected}{, }\item[{Array\+List$<$ Array\+List$<$ Double $>$ $>$}]{departure\+Times}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza la solución con el candidato seleccionado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em candidate\+Selected} & Candidato seleccionado. \\
+\hline
+{\em departure\+Times} & Tiempos de salida de los clientes. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de datos miembro}
+\index{top.TOPTWGRASP@{top.TOPTWGRASP}!NO\_EVALUATED@{NO\_EVALUATED}}
+\index{NO\_EVALUATED@{NO\_EVALUATED}!top.TOPTWGRASP@{top.TOPTWGRASP}}
+\doxysubsubsection{NO\_EVALUATED}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_g_r_a_s_p_a4319fa91e2578bb9b5570dc1af7b6f3b} 
+double top.\+TOPTWGRASP.\+NO\+\_\+\+EVALUATED = -\/1.\+0\hspace{0.3cm}{\ttfamily [static]}}
+
+Valor utilizado para indicar que una solución no ha sido evaluada. 
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/top/\textbf{ TOPTWGRASP.\+java}\end{DoxyCompactItemize}

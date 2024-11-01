@@ -1,0 +1,327 @@
+\doxysection{Referencia de la clase top.\+TOPTWSolution}
+\label{classtop_1_1_t_o_p_t_w_solution}\index{top.TOPTWSolution@{top.TOPTWSolution}}
+
+
+Clase que representa una solución para el problema \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w} (Team Orienteering Problem with Time Windows).  
+
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ TOPTWSolution} (\textbf{ TOPTW} problem)
+\item 
+void \textbf{ init\+Solution} ()
+\item 
+boolean \textbf{ is\+Depot} (int c)
+\item 
+boolean \textbf{ equals} (\textbf{ TOPTWSolution} other\+Solution)
+\item 
+int \textbf{ get\+Available\+Vehicles} ()
+\item 
+int \textbf{ get\+Created\+Routes} ()
+\item 
+double \textbf{ get\+Distance} (int x, int y)
+\item 
+void \textbf{ set\+Available\+Vehicles} (int available\+Vehicles)
+\item 
+int \textbf{ get\+Predecessor} (int customer)
+\item 
+int[$\,$] \textbf{ get\+Predecessors} ()
+\item 
+\textbf{ TOPTW} \textbf{ get\+Problem} ()
+\item 
+double \textbf{ get\+Objective\+Function\+Value} ()
+\item 
+int \textbf{ get\+Position\+In\+Route} (int customer)
+\item 
+int \textbf{ get\+Successor} (int customer)
+\item 
+int[$\,$] \textbf{ get\+Successors} ()
+\item 
+int \textbf{ get\+Index\+Route} (int index)
+\item 
+double \textbf{ get\+Waiting\+Time} (int customer)
+\item 
+void \textbf{ set\+Objective\+Function\+Value} (double objective\+Function\+Value)
+\item 
+void \textbf{ set\+Position\+In\+Route} (int customer, int position)
+\item 
+void \textbf{ set\+Predecessor} (int customer, int predecessor)
+\item 
+void \textbf{ set\+Successor} (int customer, int succesor)
+\item 
+void \textbf{ set\+Waiting\+Time} (int customer, int waiting\+Time)
+\item 
+String \textbf{ get\+Info\+Solution} ()
+\item 
+double \textbf{ evaluate\+Fitness} ()
+\item 
+int \textbf{ add\+Route} ()
+\item 
+double \textbf{ print\+Solution} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final int \textbf{ NO\+\_\+\+INITIALIZED} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que representa una solución para el problema \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w} (Team Orienteering Problem with Time Windows). 
+
+\doxysubsection{Documentación de constructores y destructores}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!TOPTWSolution@{TOPTWSolution}}
+\index{TOPTWSolution@{TOPTWSolution}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{TOPTWSolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a45192e5d12a12ec58030397041b4a369} 
+top.\+TOPTWSolution.\+TOPTWSolution (\begin{DoxyParamCaption}\item[{\textbf{ TOPTW}}]{problem}{}\end{DoxyParamCaption})}
+
+Constructor que inicializa una solución para el problema dado. Inicializa los arrays de predecesores, sucesores, tiempos de espera, posición en ruta, y rutas.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em problem} & La instancia del problema \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w} a resolver. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{addRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a74df6b4b5c27f611de4a25e34d0bd907} 
+int top.\+TOPTWSolution.\+add\+Route (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Añade una nueva ruta a la solución, decrementa el contador de vehículos disponibles y ajusta los arrays de predecesores y sucesores.
+
+\begin{DoxyReturn}{Devuelve}
+El índice del nuevo depósito en la ruta añadida. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!equals@{equals}}
+\index{equals@{equals}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{equals()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a05b3fa5facafa4a4defb17ef0c280e52} 
+boolean top.\+TOPTWSolution.\+equals (\begin{DoxyParamCaption}\item[{\textbf{ TOPTWSolution}}]{other\+Solution}{}\end{DoxyParamCaption})}
+
+Compara si esta solución es igual a otra solución dada, basada en los predecesores.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em other\+Solution} & La otra solución a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si las soluciones son equivalentes, {\ttfamily false} en caso contrario. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!evaluateFitness@{evaluateFitness}}
+\index{evaluateFitness@{evaluateFitness}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{evaluateFitness()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a07ec0a724167095ad061040e11136a19} 
+double top.\+TOPTWSolution.\+evaluate\+Fitness (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Evalúa la función objetivo basada en las puntuaciones de los puntos en cada ruta.
+
+\begin{DoxyReturn}{Devuelve}
+El valor calculado de la función objetivo. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getAvailableVehicles@{getAvailableVehicles}}
+\index{getAvailableVehicles@{getAvailableVehicles}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getAvailableVehicles()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a38cf34301737c1b75a264414a8bc60d1} 
+int top.\+TOPTWSolution.\+get\+Available\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Obtiene el número de vehículos disponibles.
+
+\begin{DoxyReturn}{Devuelve}
+Número de vehículos disponibles. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getCreatedRoutes@{getCreatedRoutes}}
+\index{getCreatedRoutes@{getCreatedRoutes}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getCreatedRoutes()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a42484d84c9770ebbb8778fc149abbb58} 
+int top.\+TOPTWSolution.\+get\+Created\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Calcula el número de rutas creadas en la solución.
+
+\begin{DoxyReturn}{Devuelve}
+Número de rutas creadas. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getDistance()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a822040f322ba94a35ed101f6c53f0b33} 
+double top.\+TOPTWSolution.\+get\+Distance (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+Calcula la distancia entre dos puntos en la solución.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & Índice del primer punto. \\
+\hline
+{\em y} & Índice del segundo punto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La distancia entre {\ttfamily x} y {\ttfamily y}. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getIndexRoute@{getIndexRoute}}
+\index{getIndexRoute@{getIndexRoute}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getIndexRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a0c4692927923549f0e137ea74850a8b6} 
+int top.\+TOPTWSolution.\+get\+Index\+Route (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getInfoSolution@{getInfoSolution}}
+\index{getInfoSolution@{getInfoSolution}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getInfoSolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a82688039e6f671f6d2f57a1888fe3c21} 
+String top.\+TOPTWSolution.\+get\+Info\+Solution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Obtiene una representación detallada de la solución, incluyendo información de cada ruta y cliente.
+
+\begin{DoxyReturn}{Devuelve}
+Cadena de texto con la información detallada de la solución. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getObjectiveFunctionValue@{getObjectiveFunctionValue}}
+\index{getObjectiveFunctionValue@{getObjectiveFunctionValue}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getObjectiveFunctionValue()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_ae21c91d29a531bbdc0e8102d56d8a40a} 
+double top.\+TOPTWSolution.\+get\+Objective\+Function\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Obtiene el valor de la función objetivo de la solución.
+
+\begin{DoxyReturn}{Devuelve}
+Valor de la función objetivo. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getPositionInRoute@{getPositionInRoute}}
+\index{getPositionInRoute@{getPositionInRoute}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getPositionInRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_aa65b95c4e6ac88aca9ce638de8c7997c} 
+int top.\+TOPTWSolution.\+get\+Position\+In\+Route (\begin{DoxyParamCaption}\item[{int}]{customer}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getPredecessor@{getPredecessor}}
+\index{getPredecessor@{getPredecessor}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getPredecessor()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a7f54a84cf209db722ecd59ab2f2452f1} 
+int top.\+TOPTWSolution.\+get\+Predecessor (\begin{DoxyParamCaption}\item[{int}]{customer}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getPredecessors@{getPredecessors}}
+\index{getPredecessors@{getPredecessors}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getPredecessors()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a1f60b3fc07b4c358ed5df797d0813862} 
+int[$\,$] top.\+TOPTWSolution.\+get\+Predecessors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getProblem@{getProblem}}
+\index{getProblem@{getProblem}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getProblem()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a4ed9a239d683e7770681aba78e8121a3} 
+\textbf{ TOPTW} top.\+TOPTWSolution.\+get\+Problem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getSuccessor@{getSuccessor}}
+\index{getSuccessor@{getSuccessor}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getSuccessor()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a559f4d8cc4b93d998243d7479fd6da8d} 
+int top.\+TOPTWSolution.\+get\+Successor (\begin{DoxyParamCaption}\item[{int}]{customer}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getSuccessors@{getSuccessors}}
+\index{getSuccessors@{getSuccessors}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getSuccessors()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a69ab8c19838d40f240fc7545d0f2961f} 
+int[$\,$] top.\+TOPTWSolution.\+get\+Successors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!getWaitingTime@{getWaitingTime}}
+\index{getWaitingTime@{getWaitingTime}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{getWaitingTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a0b4edd4fdee2ebef25c412a0c2dba0c3} 
+double top.\+TOPTWSolution.\+get\+Waiting\+Time (\begin{DoxyParamCaption}\item[{int}]{customer}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!initSolution@{initSolution}}
+\index{initSolution@{initSolution}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{initSolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_ae2cebb1c58169b05b0dcccd65eabc654} 
+void top.\+TOPTWSolution.\+init\+Solution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Inicializa la solución configurando el depósito y estableciendo los valores predeterminados. Este método reinicia los arrays de predecesores, sucesores y rutas. \index{top.TOPTWSolution@{top.TOPTWSolution}!isDepot@{isDepot}}
+\index{isDepot@{isDepot}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{isDepot()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a56640aeccb436bb9dbb33381c274443f} 
+boolean top.\+TOPTWSolution.\+is\+Depot (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+Verifica si el nodo dado es un depósito.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & El índice del nodo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} si el nodo es un depósito, {\ttfamily false} en caso contrario. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!printSolution@{printSolution}}
+\index{printSolution@{printSolution}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{printSolution()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a5df1eb3b6f4bc1265f12ffc201d86b0d} 
+double top.\+TOPTWSolution.\+print\+Solution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Imprime una representación en consola de la solución actual. Incluye los nodos visitados en cada ruta y el valor de la función objetivo.
+
+\begin{DoxyReturn}{Devuelve}
+Valor de la función objetivo después de imprimir la solución. 
+\end{DoxyReturn}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setAvailableVehicles@{setAvailableVehicles}}
+\index{setAvailableVehicles@{setAvailableVehicles}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setAvailableVehicles()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_ac8cd7cc46e73f9e1419f5b3e4c9902ef} 
+void top.\+TOPTWSolution.\+set\+Available\+Vehicles (\begin{DoxyParamCaption}\item[{int}]{available\+Vehicles}{}\end{DoxyParamCaption})}
+
+Establece el número de vehículos disponibles.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em available\+Vehicles} & Número de vehículos disponibles a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setObjectiveFunctionValue@{setObjectiveFunctionValue}}
+\index{setObjectiveFunctionValue@{setObjectiveFunctionValue}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setObjectiveFunctionValue()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a7d9b5e1b44fd3febe537d911eb2d9fa0} 
+void top.\+TOPTWSolution.\+set\+Objective\+Function\+Value (\begin{DoxyParamCaption}\item[{double}]{objective\+Function\+Value}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setPositionInRoute@{setPositionInRoute}}
+\index{setPositionInRoute@{setPositionInRoute}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setPositionInRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_abf3511e900c029944306d2e4ede400df} 
+void top.\+TOPTWSolution.\+set\+Position\+In\+Route (\begin{DoxyParamCaption}\item[{int}]{customer}{, }\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setPredecessor@{setPredecessor}}
+\index{setPredecessor@{setPredecessor}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setPredecessor()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a77bd60e16c5a4672e71d5f525cbe5e25} 
+void top.\+TOPTWSolution.\+set\+Predecessor (\begin{DoxyParamCaption}\item[{int}]{customer}{, }\item[{int}]{predecessor}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setSuccessor@{setSuccessor}}
+\index{setSuccessor@{setSuccessor}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setSuccessor()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a2b1fb005fd139112ce576687b1dd7c34} 
+void top.\+TOPTWSolution.\+set\+Successor (\begin{DoxyParamCaption}\item[{int}]{customer}{, }\item[{int}]{succesor}{}\end{DoxyParamCaption})}
+
+\index{top.TOPTWSolution@{top.TOPTWSolution}!setWaitingTime@{setWaitingTime}}
+\index{setWaitingTime@{setWaitingTime}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{setWaitingTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_af7588e114fce6bec7b8961a9e1dca206} 
+void top.\+TOPTWSolution.\+set\+Waiting\+Time (\begin{DoxyParamCaption}\item[{int}]{customer}{, }\item[{int}]{waiting\+Time}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de datos miembro}
+\index{top.TOPTWSolution@{top.TOPTWSolution}!NO\_INITIALIZED@{NO\_INITIALIZED}}
+\index{NO\_INITIALIZED@{NO\_INITIALIZED}!top.TOPTWSolution@{top.TOPTWSolution}}
+\doxysubsubsection{NO\_INITIALIZED}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_solution_a92d1f9d7c627851f410839eef407b0e1} 
+final int top.\+TOPTWSolution.\+NO\+\_\+\+INITIALIZED = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/top/\textbf{ TOPTWSolution.\+java}\end{DoxyCompactItemize}

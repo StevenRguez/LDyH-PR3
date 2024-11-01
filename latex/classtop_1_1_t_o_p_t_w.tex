@@ -1,0 +1,599 @@
+\doxysection{Referencia de la clase top.\+TOPTW}
+\label{classtop_1_1_t_o_p_t_w}\index{top.TOPTW@{top.TOPTW}}
+
+
+Esta clase representa el modelo de un problema de ruteo con restricciones de tiempo.  
+
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ TOPTW} (int nodes, int routes)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w}. \end{DoxyCompactList}\item 
+boolean \textbf{ is\+Depot} (int a)
+\begin{DoxyCompactList}\small\item\em Verifica si un punto es un depósito. \end{DoxyCompactList}\item 
+double \textbf{ get\+Distance} (int[$\,$] route)
+\begin{DoxyCompactList}\small\item\em Calcula la distancia total de una ruta. \end{DoxyCompactList}\item 
+double \textbf{ get\+Distance} (Array\+List$<$ Integer $>$ route)
+\begin{DoxyCompactList}\small\item\em Calcula la distancia total de una ruta representada como lista. \end{DoxyCompactList}\item 
+double \textbf{ get\+Distance} (Array\+List$<$ Integer $>$[$\,$] routes)
+\begin{DoxyCompactList}\small\item\em Calcula la distancia total de varias rutas. \end{DoxyCompactList}\item 
+void \textbf{ calculate\+Distance\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Calcula la matriz de distancias entre puntos de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Max\+Time\+Per\+Route} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo máximo permitido por ruta. \end{DoxyCompactList}\item 
+void \textbf{ set\+Max\+Time\+Per\+Route} (double max\+Time\+Per\+Route)
+\begin{DoxyCompactList}\small\item\em Establece el tiempo máximo permitido por ruta. \end{DoxyCompactList}\item 
+double \textbf{ get\+Max\+Routes} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número máximo de rutas. \end{DoxyCompactList}\item 
+void \textbf{ set\+Max\+Routes} (double max\+Routes)
+\begin{DoxyCompactList}\small\item\em Establece el número máximo de rutas. \end{DoxyCompactList}\item 
+int \textbf{ get\+POIs} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número de puntos de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Distance} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Obtiene la distancia entre dos puntos específicos. \end{DoxyCompactList}\item 
+double \textbf{ get\+Time} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo necesario para viajar entre dos puntos. \end{DoxyCompactList}\item 
+int \textbf{ get\+Nodes} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número total de puntos de interés (nodos). \end{DoxyCompactList}\item 
+void \textbf{ set\+Nodes} (int nodes)
+\begin{DoxyCompactList}\small\item\em Establece el número de nodos en el problema. \end{DoxyCompactList}\item 
+double \textbf{ getX} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene la coordenada X de un punto de interés. \end{DoxyCompactList}\item 
+void \textbf{ setX} (int index, double x)
+\begin{DoxyCompactList}\small\item\em Establece la coordenada X de un punto de interés. \end{DoxyCompactList}\item 
+double \textbf{ getY} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene la coordenada Y de un punto de interés. \end{DoxyCompactList}\item 
+void \textbf{ setY} (int index, double y)
+\begin{DoxyCompactList}\small\item\em Establece la coordenada Y de un punto de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Score} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene la puntuación asociada a un punto de interés. \end{DoxyCompactList}\item 
+double[$\,$] \textbf{ get\+Score} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el arreglo de puntuaciones de todos los puntos de interés. \end{DoxyCompactList}\item 
+void \textbf{ set\+Score} (int index, double score)
+\begin{DoxyCompactList}\small\item\em Establece la puntuación de un punto de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Ready\+Time} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo de inicio de servicio de un punto de interés. \end{DoxyCompactList}\item 
+void \textbf{ set\+Ready\+Time} (int index, double ready\+Time)
+\begin{DoxyCompactList}\small\item\em Establece el tiempo de inicio de servicio de un punto de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Due\+Time} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo límite de servicio de un punto de interés. \end{DoxyCompactList}\item 
+void \textbf{ set\+Due\+Time} (int index, double due\+Time)
+\begin{DoxyCompactList}\small\item\em Establece el tiempo límite de servicio de un punto de interés. \end{DoxyCompactList}\item 
+double \textbf{ get\+Service\+Time} (int index)
+\begin{DoxyCompactList}\small\item\em Obtiene el tiempo de servicio de un punto de interés. \end{DoxyCompactList}\item 
+void \textbf{ set\+Service\+Time} (int index, double service\+Time)
+\begin{DoxyCompactList}\small\item\em Establece el tiempo de servicio de un punto de interés. \end{DoxyCompactList}\item 
+int \textbf{ get\+Vehicles} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número de vehículos disponibles. \end{DoxyCompactList}\item 
+String \textbf{ to\+String} ()
+\begin{DoxyCompactList}\small\item\em Convierte el objeto a una representación de cadena con información detallada. \end{DoxyCompactList}\item 
+int \textbf{ add\+Node} ()
+\begin{DoxyCompactList}\small\item\em Añade un nuevo nodo al conjunto de puntos de interés. \end{DoxyCompactList}\item 
+int \textbf{ add\+Node\+Depot} ()
+\begin{DoxyCompactList}\small\item\em Añade un nuevo depósito al conjunto de depósitos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Esta clase representa el modelo de un problema de ruteo con restricciones de tiempo. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\index{top.TOPTW@{top.TOPTW}!TOPTW@{TOPTW}}
+\index{TOPTW@{TOPTW}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{TOPTW()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a7eb342fe9e9856e9a8dad7ae0f888777} 
+top.\+TOPTW.\+TOPTW (\begin{DoxyParamCaption}\item[{int}]{nodes}{, }\item[{int}]{routes}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxyref{TOPTW}{pág.}{classtop_1_1_t_o_p_t_w}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodes} & Número de puntos de interés. \\
+\hline
+{\em routes} & Número de rutas (vehículos) disponibles. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\index{top.TOPTW@{top.TOPTW}!addNode@{addNode}}
+\index{addNode@{addNode}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{addNode()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a89fe6a60b12960241afe3381b558853b} 
+int top.\+TOPTW.\+add\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo nodo al conjunto de puntos de interés. 
+
+\begin{DoxyReturn}{Devuelve}
+Número total de nodos tras la adición. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!addNodeDepot@{addNodeDepot}}
+\index{addNodeDepot@{addNodeDepot}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{addNodeDepot()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_abc8ba9eecbd30ef1941a21418259045f} 
+int top.\+TOPTW.\+add\+Node\+Depot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo depósito al conjunto de depósitos. 
+
+\begin{DoxyReturn}{Devuelve}
+Número total de depósitos tras la adición. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!calculateDistanceMatrix@{calculateDistanceMatrix}}
+\index{calculateDistanceMatrix@{calculateDistanceMatrix}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{calculateDistanceMatrix()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ad541e0a7d1aafc2b061e024c066dd662} 
+void top.\+TOPTW.\+calculate\+Distance\+Matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la matriz de distancias entre puntos de interés. 
+
+\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getDistance()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a8e1710d766a0093f967bd89068649be7} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{route}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la distancia total de una ruta representada como lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em route} & Lista de índices que representan la ruta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Distancia total de la ruta. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getDistance()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a2a0ad21770084fd267f05607d122a59a} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$[$\,$]}]{routes}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la distancia total de varias rutas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em routes} & Array de listas, cada una representando una ruta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Distancia total de todas las rutas. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getDistance()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_aa48886efb5544475f15787bf2bee9242} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la distancia entre dos puntos específicos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & Índice del primer punto. \\
+\hline
+{\em j} & Índice del segundo punto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Distancia entre los dos puntos. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getDistance()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a137f100c5711b4b93cb5ae1711ddaf9a} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{int[$\,$]}]{route}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la distancia total de una ruta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em route} & Array de índices que representan la ruta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Distancia total de la ruta. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getDueTime@{getDueTime}}
+\index{getDueTime@{getDueTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getDueTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a0d14aca2e33a8fb1eb08013c3d55abfa} 
+double top.\+TOPTW.\+get\+Due\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el tiempo límite de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Tiempo límite de servicio. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getMaxRoutes@{getMaxRoutes}}
+\index{getMaxRoutes@{getMaxRoutes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getMaxRoutes()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a2880cd94f79a8eeb732e99af69cdbbde} 
+double top.\+TOPTW.\+get\+Max\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el número máximo de rutas. 
+
+\begin{DoxyReturn}{Devuelve}
+Número máximo de rutas. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getMaxTimePerRoute@{getMaxTimePerRoute}}
+\index{getMaxTimePerRoute@{getMaxTimePerRoute}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getMaxTimePerRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a9363c6b94f247ce746510fe1036d143a} 
+double top.\+TOPTW.\+get\+Max\+Time\+Per\+Route (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el tiempo máximo permitido por ruta. 
+
+\begin{DoxyReturn}{Devuelve}
+Tiempo máximo por ruta. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getNodes()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a81c3893424cfce15442b001571a18283} 
+int top.\+TOPTW.\+get\+Nodes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el número total de puntos de interés (nodos). 
+
+\begin{DoxyReturn}{Devuelve}
+Número de nodos. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getPOIs@{getPOIs}}
+\index{getPOIs@{getPOIs}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getPOIs()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a98907c6bbeba9aba86727ecad5058261} 
+int top.\+TOPTW.\+get\+POIs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el número de puntos de interés. 
+
+\begin{DoxyReturn}{Devuelve}
+Número de puntos de interés. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getReadyTime@{getReadyTime}}
+\index{getReadyTime@{getReadyTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getReadyTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a4e74b10708b232a801a4ad147892b70a} 
+double top.\+TOPTW.\+get\+Ready\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el tiempo de inicio de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Tiempo de inicio de servicio. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getScore@{getScore}}
+\index{getScore@{getScore}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getScore()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a19a357f4266e806d76516dfa4b7f7688} 
+double[$\,$] top.\+TOPTW.\+get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el arreglo de puntuaciones de todos los puntos de interés. 
+
+\begin{DoxyReturn}{Devuelve}
+Arreglo de puntuaciones. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getScore@{getScore}}
+\index{getScore@{getScore}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getScore()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ad028d42f72214373efca074483462837} 
+double top.\+TOPTW.\+get\+Score (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la puntuación asociada a un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Puntuación del punto de interés. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getServiceTime@{getServiceTime}}
+\index{getServiceTime@{getServiceTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getServiceTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a06b2b40d137f16bdda21c734d3ea8ac7} 
+double top.\+TOPTW.\+get\+Service\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el tiempo de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Tiempo de servicio. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getTime@{getTime}}
+\index{getTime@{getTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a3f724d2f10d5174c70748449a291ad86} 
+double top.\+TOPTW.\+get\+Time (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el tiempo necesario para viajar entre dos puntos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & Índice del primer punto. \\
+\hline
+{\em j} & Índice del segundo punto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Tiempo entre los dos puntos. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getVehicles@{getVehicles}}
+\index{getVehicles@{getVehicles}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getVehicles()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_abfba541876921de9ec5a63373c056446} 
+int top.\+TOPTW.\+get\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el número de vehículos disponibles. 
+
+\begin{DoxyReturn}{Devuelve}
+Número de vehículos. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getX@{getX}}
+\index{getX@{getX}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getX()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ab17563354a34944d14e4ac57f6613da6} 
+double top.\+TOPTW.\+getX (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la coordenada X de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Coordenada X del punto de interés. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!getY@{getY}}
+\index{getY@{getY}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{getY()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a3a39395dfc3d6360273580f177bede7a} 
+double top.\+TOPTW.\+getY (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la coordenada Y de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Coordenada Y del punto de interés. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!isDepot@{isDepot}}
+\index{isDepot@{isDepot}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{isDepot()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a642e958056dc77c10d72831d633e2f49} 
+boolean top.\+TOPTW.\+is\+Depot (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Verifica si un punto es un depósito. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & Índice del punto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Verdadero si el punto es un depósito, falso en caso contrario. 
+\end{DoxyReturn}
+\index{top.TOPTW@{top.TOPTW}!setDueTime@{setDueTime}}
+\index{setDueTime@{setDueTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setDueTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a0576cf2e4c066aae858a2487ada18785} 
+void top.\+TOPTW.\+set\+Due\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{due\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Establece el tiempo límite de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em due\+Time} & Tiempo límite de servicio a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setMaxRoutes@{setMaxRoutes}}
+\index{setMaxRoutes@{setMaxRoutes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setMaxRoutes()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ab8d4f9301cc2e3df582b94a5c0659011} 
+void top.\+TOPTW.\+set\+Max\+Routes (\begin{DoxyParamCaption}\item[{double}]{max\+Routes}{}\end{DoxyParamCaption})}
+
+
+
+Establece el número máximo de rutas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em max\+Routes} & Número máximo de rutas. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setMaxTimePerRoute@{setMaxTimePerRoute}}
+\index{setMaxTimePerRoute@{setMaxTimePerRoute}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setMaxTimePerRoute()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_afbe8fd7e4e3b3d702768e01643558ddf} 
+void top.\+TOPTW.\+set\+Max\+Time\+Per\+Route (\begin{DoxyParamCaption}\item[{double}]{max\+Time\+Per\+Route}{}\end{DoxyParamCaption})}
+
+
+
+Establece el tiempo máximo permitido por ruta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em max\+Time\+Per\+Route} & Tiempo máximo por ruta. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setNodes@{setNodes}}
+\index{setNodes@{setNodes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setNodes()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a862dd83897ca658bef8e413a24e3daef} 
+void top.\+TOPTW.\+set\+Nodes (\begin{DoxyParamCaption}\item[{int}]{nodes}{}\end{DoxyParamCaption})}
+
+
+
+Establece el número de nodos en el problema. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodes} & Número de nodos. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setReadyTime@{setReadyTime}}
+\index{setReadyTime@{setReadyTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setReadyTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a97c54405c2ffff1b04371ee42acb1dff} 
+void top.\+TOPTW.\+set\+Ready\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{ready\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Establece el tiempo de inicio de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em ready\+Time} & Tiempo de inicio de servicio a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setScore@{setScore}}
+\index{setScore@{setScore}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setScore()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_af9ea3e6941f3ebf4c4415a563d824d89} 
+void top.\+TOPTW.\+set\+Score (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{score}{}\end{DoxyParamCaption})}
+
+
+
+Establece la puntuación de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em score} & Puntuación a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setServiceTime@{setServiceTime}}
+\index{setServiceTime@{setServiceTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setServiceTime()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_adce95dbc2b525cbbde383e0b950f874e} 
+void top.\+TOPTW.\+set\+Service\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{service\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Establece el tiempo de servicio de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em service\+Time} & Tiempo de servicio a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setX@{setX}}
+\index{setX@{setX}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setX()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a14a7fc055b07f3fb564666ad4ff12084} 
+void top.\+TOPTW.\+setX (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Establece la coordenada X de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em x} & Coordenada X a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!setY@{setY}}
+\index{setY@{setY}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{setY()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a8318436161579a8b9050a657ca63c5e0} 
+void top.\+TOPTW.\+setY (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Establece la coordenada Y de un punto de interés. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Índice del punto de interés. \\
+\hline
+{\em y} & Coordenada Y a establecer. \\
+\hline
+\end{DoxyParams}
+\index{top.TOPTW@{top.TOPTW}!toString@{toString}}
+\index{toString@{toString}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{toString()}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a339572ea7e09f0b54ee9221710a41e3d} 
+String top.\+TOPTW.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Convierte el objeto a una representación de cadena con información detallada. 
+
+\begin{DoxyReturn}{Devuelve}
+Representación en formato de texto del objeto. 
+\end{DoxyReturn}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/top/\textbf{ TOPTW.\+java}\end{DoxyCompactItemize}

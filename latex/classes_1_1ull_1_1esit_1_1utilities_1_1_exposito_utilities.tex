@@ -1,0 +1,283 @@
+\doxysection{Referencia de la clase es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities}
+\label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities}\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ generate\+Random\+Number} (int min, int max)
+\item 
+static double \textbf{ generate\+Random\+Double} (double min, double max)
+\item 
+static$<$ T $>$ void \textbf{ shuffle\+Array} (T[$\,$] array)
+\item 
+static void \textbf{ print\+File} (String file)
+\item 
+static String \textbf{ simplify\+String} (String string)
+\item 
+static double[$\,$][$\,$] \textbf{ multiply\+Matrices} (double[$\,$][$\,$] a, double[$\,$][$\,$] b)
+\item 
+static void \textbf{ write\+Text\+To\+File} (String file, String text)  throws IOException 
+\item 
+static String \textbf{ get\+Format} (String[$\,$] strings, int[$\,$] column\+Widths)
+\item 
+static String \textbf{ get\+Format} (double value)
+\item 
+static boolean \textbf{ is\+Integer} (String str)
+\item 
+static boolean \textbf{ is\+Double} (String str)
+\item 
+static boolean \textbf{ is\+Acyclic} (int[$\,$][$\,$] distance\+Matrix)
+\item 
+static boolean \textbf{ there\+Is\+Path} (int[$\,$][$\,$] distance\+Matrix, int node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final int \textbf{ DEFAULT\+\_\+\+COLUMN\+\_\+\+WIDTH} = 10
+\item 
+static final int \textbf{ ALIGNMENT\+\_\+\+LEFT} = 1
+\item 
+static final int \textbf{ ALIGNMENT\+\_\+\+RIGHT} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!generateRandomDouble@{generateRandomDouble}}
+\index{generateRandomDouble@{generateRandomDouble}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{generateRandomDouble()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_ab2bab08839899d236eaad9c3146f8110} 
+static double es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+generate\+Random\+Double (\begin{DoxyParamCaption}\item[{double}]{min}{, }\item[{double}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Genera un número aleatorio de punto flotante en un rango específico.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em min} & El valor mínimo (incluido). \\
+\hline
+{\em max} & El valor máximo (excluido). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un número aleatorio de punto flotante dentro del rango [min, max). 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!generateRandomNumber@{generateRandomNumber}}
+\index{generateRandomNumber@{generateRandomNumber}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{generateRandomNumber()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a333340c0e940374cd38fd034c965ce20} 
+static int es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+generate\+Random\+Number (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Genera un número aleatorio dentro de un rango específico.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em min} & El valor mínimo (incluido). \\
+\hline
+{\em max} & El valor máximo (excluido). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un número aleatorio dentro del rango [min, max). 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!getFormat@{getFormat}}
+\index{getFormat@{getFormat}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{getFormat()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a1668b663acb808d1a3a8d69a9638da90} 
+static String es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+get\+Format (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Da formato a un número double con tres decimales.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & valor a formatear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el string formateado 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!getFormat@{getFormat}}
+\index{getFormat@{getFormat}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{getFormat()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a631b4e423863336e398f49c43de8dec8} 
+static String es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+get\+Format (\begin{DoxyParamCaption}\item[{String[$\,$]}]{strings}{, }\item[{int[$\,$]}]{column\+Widths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Da formato a un string, detectando si es número entero o decimal.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em strings} & el string a formatear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el string formateado 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!isAcyclic@{isAcyclic}}
+\index{isAcyclic@{isAcyclic}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{isAcyclic()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a5048eaa059161a2cfa8e5c6bc9c04cfb} 
+static boolean es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+is\+Acyclic (\begin{DoxyParamCaption}\item[{int}]{distance\+Matrix}{[$\,$][$\,$]}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifica si una matriz de distancias es acíclica.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em distance\+Matrix} & matriz de distancias \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si no contiene ciclos, false en caso contrario 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!isDouble@{isDouble}}
+\index{isDouble@{isDouble}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{isDouble()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_aea4db414c92e2fc046f76ef43fcf1214} 
+static boolean es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+is\+Double (\begin{DoxyParamCaption}\item[{String}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifica si un string representa un número decimal.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & el string a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si es un decimal, false en caso contrario 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{isInteger()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a3aa6195e3bb8c5393a84ab3ff7b3f18a} 
+static boolean es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+is\+Integer (\begin{DoxyParamCaption}\item[{String}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifica si un string representa un número entero.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & el string a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si es un entero, false en caso contrario 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!multiplyMatrices@{multiplyMatrices}}
+\index{multiplyMatrices@{multiplyMatrices}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{multiplyMatrices()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a756b5634f778aaf41e28fd3263c9798b} 
+static double[$\,$][$\,$] es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+multiply\+Matrices (\begin{DoxyParamCaption}\item[{double}]{a}{[$\,$][$\,$], }\item[{double}]{b}{[$\,$][$\,$]}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Multiplica dos matrices.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & primera matriz \\
+\hline
+{\em b} & segunda matriz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+matriz resultado o null si las dimensiones son incompatibles 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!printFile@{printFile}}
+\index{printFile@{printFile}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{printFile()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a76e13d48f3056064b761feaa50a37656} 
+static void es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+print\+File (\begin{DoxyParamCaption}\item[{String}]{file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Imprime el contenido de un archivo línea por línea.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em file} & ruta del archivo a imprimir \\
+\hline
+\end{DoxyParams}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!shuffleArray@{shuffleArray}}
+\index{shuffleArray@{shuffleArray}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{shuffleArray()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a84fefad32f496631e300b23340bba063} 
+static$<$ T $>$ void es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+shuffle\+Array (\begin{DoxyParamCaption}\item[{T[$\,$]}]{array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Mezcla un arreglo de elementos de manera aleatoria.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em array} & El arreglo a mezclar. \\
+\hline
+\end{DoxyParams}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!simplifyString@{simplifyString}}
+\index{simplifyString@{simplifyString}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{simplifyString()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a7ae7bdc68d2eac0de896cbe56878fd64} 
+static String es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+simplify\+String (\begin{DoxyParamCaption}\item[{String}]{string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simplifica un string eliminando espacios extra y tabs.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & el string a simplificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el string simplificado 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!thereIsPath@{thereIsPath}}
+\index{thereIsPath@{thereIsPath}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{thereIsPath()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a219fe3e64266d6eeb8bd2137e8c81c3b} 
+static boolean es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+there\+Is\+Path (\begin{DoxyParamCaption}\item[{int}]{distance\+Matrix}{[$\,$][$\,$], }\item[{int}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determina si existe un camino desde un nodo específico en una matriz de distancias.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em distance\+Matrix} & matriz de distancias \\
+\hline
+{\em node} & nodo a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si existe un camino que forma un ciclo, false en caso contrario 
+\end{DoxyReturn}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!writeTextToFile@{writeTextToFile}}
+\index{writeTextToFile@{writeTextToFile}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{writeTextToFile()}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a71709ecd8a80b777e754e918700f8bb8} 
+static void es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+write\+Text\+To\+File (\begin{DoxyParamCaption}\item[{String}]{file}{, }\item[{String}]{text}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+Escribe un texto en un archivo, usando try-\/with-\/resources para gestionar el cierre de Buffered\+Writer.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em file} & archivo donde escribir \\
+\hline
+{\em text} & texto a escribir \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em IOException} & si ocurre un error de escritura \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Documentación de datos miembro}
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!ALIGNMENT\_LEFT@{ALIGNMENT\_LEFT}}
+\index{ALIGNMENT\_LEFT@{ALIGNMENT\_LEFT}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{ALIGNMENT\_LEFT}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_aec9f22bde414b43d04607fed896125c3} 
+final int es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+ALIGNMENT\+\_\+\+LEFT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!ALIGNMENT\_RIGHT@{ALIGNMENT\_RIGHT}}
+\index{ALIGNMENT\_RIGHT@{ALIGNMENT\_RIGHT}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{ALIGNMENT\_RIGHT}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_a09bfe058e6e119adf0997c166073db69} 
+final int es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+ALIGNMENT\+\_\+\+RIGHT = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\index{es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}!DEFAULT\_COLUMN\_WIDTH@{DEFAULT\_COLUMN\_WIDTH}}
+\index{DEFAULT\_COLUMN\_WIDTH@{DEFAULT\_COLUMN\_WIDTH}!es.ull.esit.utilities.ExpositoUtilities@{es.ull.esit.utilities.ExpositoUtilities}}
+\doxysubsubsection{DEFAULT\_COLUMN\_WIDTH}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1esit_1_1utilities_1_1_exposito_utilities_ab16e491dc8ee2075b993ebb2e638129d} 
+final int es.\+ull.\+esit.\+utilities.\+Exposito\+Utilities.\+DEFAULT\+\_\+\+COLUMN\+\_\+\+WIDTH = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/ull/esit/utilities/\textbf{ Exposito\+Utilities.\+java}\end{DoxyCompactItemize}
